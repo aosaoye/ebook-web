@@ -1,550 +1,778 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ebook definitivo sobre desarrollo moderno, cloud y arquitectura de software. Diseño minimalista y práctico.">
+    <meta name="author" content="Prof. Sophia">
 
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Ebook | Guía Definitiva de Arquitectura & Código Limpio</title>
 
-    <title>ebook landing page template</title>
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+    <!-- CSS Files -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <link href="css/bootstrap-icons.css" rel="stylesheet">
-
     <link href="css/templatemo-ebook-landing.css" rel="stylesheet">
-    </head>
+</head>
 
 <body>
 
+    <!-- Sticky Frosted Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#section_1">
+                <div class="navbar-brand-icon-wrap">
+                    <i class="bi bi-book-half"></i>
+                </div>
+                <span>Ebook</span>
+            </a>
+
+            <div class="d-lg-none ms-auto me-3">
+                <a href="#section_5" class="btn-minimal btn-minimal-primary btn-minimal-sm">
+                    <i class="bi bi-cloud-arrow-down"></i>
+                    <span>Descargar</span>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-lg-auto me-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section_1">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_2">El Libro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_preview">Capítulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_3">Autora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_4">Opiniones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_5">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="d-none d-lg-block">
+                    <a href="#section_5" class="btn-minimal btn-minimal-primary btn-minimal-sm">
+                        <i class="bi bi-cloud-arrow-down"></i>
+                        <span>Descargar Gratis</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <main>
 
-        <nav class="navbar navbar-expand-lg">
+        <!-- Hero Section -->
+        <section class="hero-section" id="section_1">
+            <div class="hero-glow-blob hero-glow-blob-1"></div>
+            <div class="hero-glow-blob hero-glow-blob-2"></div>
+
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <i class="navbar-brand-icon bi-book me-2"></i>
-                    <span>Ebook</span>
-                </a>
+                <div class="row align-items-center">
 
-                <div class="d-lg-none ms-auto me-3">
-                    <a href="#" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                        <i class="btn-icon bi-cloud-download"></i>
-                        <span>Download</span></a>
-                </div>
+                    <div class="col-lg-6 col-12 hero-content reveal">
+                        <div class="hero-badge">
+                            <span class="badge-pulse-dot"></span>
+                            <span>Nueva Edición 2026 • Acceso Inmediato</span>
+                        </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <h1 class="hero-title">
+                            Domina el código, la nube y la
+                            <span class="hero-title-highlight">arquitectura moderna</span>
+                        </h1>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-auto me-lg-4">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
-                        </li>
+                        <p class="hero-lead">
+                            Una guía exhaustiva, elegante y 100% práctica creada para ingenieros y profesionales que buscan construir sistemas escalables y recuperar el control de su tiempo.
+                        </p>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">The Book</a>
-                        </li>
+                        <div class="hero-cta-group">
+                            <a href="#section_5" class="btn-minimal btn-minimal-primary">
+                                <span>Descargar Muestra Gratis</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Author</a>
-                        </li>
+                            <a href="#section_2" class="btn-minimal btn-minimal-outline">
+                                <i class="bi bi-journal-text"></i>
+                                <span>Explorar Contenido</span>
+                            </a>
+                        </div>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Reviews</a>
-                        </li>
+                        <div class="hero-proof">
+                            <div class="avatar-stack">
+                                <img src="images/avatar/avatar-sandy.jpg" class="avatar-stack-item" alt="Lector Sandy">
+                                <img src="images/avatar/avatar-john.jpg" class="avatar-stack-item" alt="Lector John">
+                                <img src="images/avatar/avatar-candy.jpg" class="avatar-stack-item" alt="Lectora Candy">
+                                <img src="images/avatar/avatar-sophia.jpg" class="avatar-stack-item" alt="Autora Sophia">
+                            </div>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
-                        </li>
-                    </ul>
-
-                    <div class="d-none d-lg-block">
-                        <a href="#" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                            <i class="btn-icon bi-cloud-download"></i>
-                            <span>Download</span></a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-
-        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12 mb-5 pb-5 pb-lg-0 mb-lg-0">
-
-                        <h6>Introducing ebook</h6>
-
-                        <h1 class="text-white mb-4">ebook landing page for professionals</h1>
-
-                        <a href="#section_2" class="btn custom-btn smoothscroll me-3">Discover More</a>
-
-                        <a href="#section_3" class="link link--kale smoothscroll">Meet the Author</a>
-                    </div>
-
-                    <div class="hero-image-wrap col-lg-6 col-12 mt-3 mt-lg-0">
-                        <img src="images/education-online-books.png" class="hero-image img-fluid"
-                            alt="education online books">
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class="featured-section">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-8 col-12">
-                        <div class="avatar-group d-flex flex-wrap align-items-center">
-                            <img src="images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg"
-                                class="img-fluid avatar-image" alt="">
-
-                            <img src="images/avatar/portrait-young-redhead-bearded-male.jpg"
-                                class="img-fluid avatar-image avatar-image-left" alt="">
-
-                            <img src="images/avatar/pretty-blonde-woman.jpg"
-                                class="img-fluid avatar-image avatar-image-left" alt="">
-
-                            <img src="images/avatar/studio-portrait-emotional-happy-funny-smiling-boyfriend.jpg"
-                                class="img-fluid avatar-image avatar-image-left" alt="">
-
-                            <div class="reviews-group mt-3 mt-lg-0">
-                                <strong>4.5</strong>
-
-                                <i class="bi-star-fill"></i>
-                                <i class="bi-star-fill"></i>
-                                <i class="bi-star-fill"></i>
-                                <i class="bi-star-fill"></i>
-                                <i class="bi-star"></i>
-
-                                <small class="ms-3">2,564 reviews</small>
+                            <div class="hero-proof-text">
+                                <div class="stars-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="ms-1 fw-bold text-dark">4.9/5</span>
+                                <span class="text-muted d-block small">+15,000 profesionales ya lo están leyendo</span>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-6 col-12 mt-5 mt-lg-0 hero-visual-col reveal reveal-delay-2">
+                        <div class="book-display-container">
+                            <div class="floating-chip chip-badge-top">
+                                <div class="chip-icon chip-icon-primary">
+                                    <i class="bi bi-award-fill"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-bold">#1 Más Leído</div>
+                                    <div class="text-muted small">DevOps & Cloud 2026</div>
+                                </div>
+                            </div>
+
+                            <div class="book-display-card">
+                                <img src="images/hero-book.jpg" class="book-display-image" alt="Portada Ebook Mastering Code & Cloud">
+                            </div>
+
+                            <div class="floating-chip chip-badge-bottom">
+                                <div class="chip-icon chip-icon-success">
+                                    <i class="bi bi-file-earmark-code"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-bold">+280 Páginas</div>
+                                    <div class="text-muted small">Ejemplos reales descargables</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- Stats / Metrics Strip -->
+        <section class="stats-strip">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-md-3 col-6 stat-item stat-divider reveal">
+                        <div class="stat-number">15K+</div>
+                        <div class="stat-label">Copias Distribuidas</div>
+                    </div>
 
-        <section class="py-lg-5"></section>
+                    <div class="col-md-3 col-6 stat-item stat-divider reveal reveal-delay-1">
+                        <div class="stat-number">4.9/5</div>
+                        <div class="stat-label">Valoración Promedio</div>
+                    </div>
 
+                    <div class="col-md-3 col-6 stat-item stat-divider reveal reveal-delay-2">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Capítulos Prácticos</div>
+                    </div>
 
+                    <div class="col-md-3 col-6 stat-item reveal reveal-delay-3">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Garantía de Claridad</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About The Book Section -->
         <section class="book-section section-padding" id="section_2">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center g-5">
 
-                    <div class="col-lg-6 col-12">
-                        <img src="images/tablet-screen-contents.jpg" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-6 col-12">
-                        <div class="book-section-info">
-                            <h6>Modern &amp; Creative</h6>
-
-
-                            <h2 class="mb-4">About The Book</h2>
-
-                            <p>Credit goes to <a rel="nofollow" href="https://freepik.com" target="_blank">FreePik</a>
-                                for images used in this ebook landing page template. You may browse FreePik to download
-                                more free images for your website.</p>
-
-                            <p>TemplateMo is one of the best websites to download free CSS templates for any purpose.
-                                This is an ebook landing page template using Bootstrap 5 CSS layout.</p>
+                    <div class="col-lg-6 col-12 reveal">
+                        <div class="book-preview-wrap">
+                            <img src="images/tablet-preview.jpg" class="book-preview-img" alt="Previsualización del libro en tablet">
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </section>
-
-
-        <section>
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12 text-center">
-                        <h6>What's inside?</h6>
-
-                        <h2 class="mb-5">Preview at glance</h2>
-                    </div>
-
-                    <div class="col-lg-4 col-12">
-                        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link smoothscroll" href="#item-1">Introduction</a>
-
-                                <a class="nav-link smoothscroll" href="#item-2">Chapter 1: <strong>Win back your
-                                        time</strong></a>
-
-                                <a class="nav-link smoothscroll" href="#item-3">Chapter 2: <strong>Work less, do
-                                        more</strong></a>
-
-                                <a class="nav-link smoothscroll" href="#item-4">Chapter 3: <strong>Delegate</strong></a>
-
-                                <a class="nav-link smoothscroll" href="#item-5">Chapter 4: <strong>Habits</strong></a>
-                            </nav>
-                        </nav>
-                    </div>
-
-                    <div class="col-lg-8 col-12">
-                        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
-                            class="scrollspy-example-2" tabindex="0">
-                            <div class="scrollspy-example-item" id="item-1">
-                                <h5>Introducing ebook</h5>
-
-                                <p>This ebook landing page is good to use for any purpose. This layout is based on
-                                    Bootstrap 5 CSS framework.</p>
-
-                                <p><strong>What is Content Marketing?</strong> If you are wondering what content
-                                    marketing is all about, this is the place to start.</p>
-
-                                <blockquote class="blockquote">Lorem Ipsum dolor sit amet, consectetur adipsicing kengan
-                                    omeg kohm tokito</blockquote>
-
-                                <p>When you need free HTML CSS templates, please visit Templatemo website which provides
-                                    a variety of templates.</p>
-                            </div>
-
-                            <div class="scrollspy-example-item" id="item-2">
-                                <h5>Win back your time</h5>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-
-                                <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus
-                                    elementum, tempor risus vel, condimentum orci.</p>
-
-                                <p>You are not allowed to redistribute this template ZIP file on any other template
-                                    collection website. Please contact TemplateMo for more information.</p>
-
-                                <div class="row">
-                                    <div class="col-lg-6 col-12 mb-3">
-                                        <img src="images/portrait-mature-smiling-authoress-sitting-desk.jpg"
-                                            class="scrollspy-example-item-image img-fluid" alt="">
-                                    </div>
-
-                                    <div class="col-lg-6 col-12 mb-3">
-                                        <img src="images/businessman-sitting-by-table-cafe.jpg"
-                                            class="scrollspy-example-item-image img-fluid" alt="">
-                                    </div>
-                                </div>
-
-                                <p>If you need some specific CSS templates, you can Google with keywords such as
-                                    templatemo gallery, templatemo digital marketing, etc.</p>
-                            </div>
-
-                            <div class="scrollspy-example-item" id="item-3">
-                                <h5>Work less, do more</h5>
-
-                                <p>Credit goes to <a rel="nofollow" href="https://freepik.com"
-                                        target="_blank">FreePik</a> for images used in this ebook landing page template.
-                                    You may browse FreePik to download more free images for your website.</p>
-                                <p>This is a second paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt.</p>
-
-                                <p>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor
-                                    incididunt ut labore.</p>
-
-                                <div class="row align-items-center">
-                                    <div class="col-lg-6 col-12">
-                                        <img src="images/tablet-screen-contents.jpg" class="img-fluid" alt="">
-                                    </div>
-
-                                    <div class="col-lg-6 col-12">
-                                        <p>Modern ebook ever</p>
-
-                                        <p><strong>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod.
-                                                tempor incididunt.</strong></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="scrollspy-example-item" id="item-4">
-                                <h5>Delegate</h5>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-
-                                <p>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor
-                                    incididunt ut labore.</p>
-
-                                <p>You are not allowed to redistribute this template ZIP file on any other template
-                                    collection website. Please contact TemplateMo for more information.</p>
-
-                                <img src="images/portrait-mature-smiling-authoress-sitting-desk.jpg"
-                                    class="scrollspy-example-item-image img-fluid mb-3" alt="">
-
-                                <p>You may want to contact us for more information about this template.</p>
-                            </div>
-
-                            <div class="scrollspy-example-item" id="item-5">
-                                <h5>Habits</h5>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-
-                                <p>You are not allowed to redistribute this template ZIP file on any other template
-                                    collection website. Please contact TemplateMo for more information.</p>
-
-                                <p><strong>What is Free CSS Templates?</strong> Free CSS Templates are a variety of
-                                    ready-made web pages designed for different kinds of websites.</p>
-
-                                <blockquote class="blockquote">Lorem Ipsum dolor sit amet, consectetur adipsicing kengan
-                                    omeg kohm tokito</blockquote>
-
-                                <p>You may browse TemplateMo website for more CSS templates. Thank you for visiting our
-                                    website.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class="author-section section-padding" id="section_3">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12">
-                        <img src="images/portrait-mature-smiling-authoress-sitting-desk.jpg"
-                            class="author-image img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                        <h6>Meet Author</h6>
-
-                        <h2 class="mb-4">Prof. Sophia</h2>
-
-                        <p>This is an ebook landing page template with Bootstrap 5 CSS framework. It is easy to
-                            customize with the use of Bootstrap CSS classes.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor incididunt ut
-                            labore.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class="reviews-section section-padding" id="section_4">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12 text-center mb-5">
-                        <h6>Reviews</h6>
-
-                        <h2>What people saying...</h2>
-                    </div>
-
-                    <div class="col-lg-4 col-12">
-                        <div class="custom-block d-flex flex-wrap">
-                            <div class="custom-block-image-wrap d-flex flex-column">
-                                <img src="images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg"
-                                    class="img-fluid avatar-image" alt="">
-
-                                <div class="text-center mt-3">
-                                    <span class="text-white">Sandy</span>
-
-                                    <strong class="d-block text-white">Artist</strong>
-                                </div>
-                            </div>
-
-                            <div class="custom-block-info">
-                                <div class="reviews-group mb-3">
-                                    <strong>4.5</strong>
-
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star"></i>
-                                </div>
-
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-12 my-5 my-lg-0">
-                        <div class="custom-block d-flex flex-wrap">
-                            <div class="custom-block-image-wrap d-flex flex-column">
-                                <img src="images/avatar/portrait-young-redhead-bearded-male.jpg"
-                                    class="img-fluid avatar-image avatar-image-left" alt="">
-
-                                <div class="text-center mt-3">
-                                    <span class="text-white">John</span>
-
-                                    <strong class="d-block text-white">Producer</strong>
-                                </div>
-                            </div>
-
-                            <div class="custom-block-info">
-                                <div class="reviews-group mb-3">
-                                    <strong>3.5</strong>
-
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star"></i>
-                                    <i class="bi-star"></i>
-                                </div>
-
-                                <p class="mb-0">If you need some specific CSS templates, you can Google with keywords
-                                    such as templatemo one-page, templatemo portfolio, etc.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-12">
-                        <div class="custom-block d-flex flex-wrap">
-                            <div class="custom-block-image-wrap d-flex flex-column">
-                                <img src="images/avatar/pretty-blonde-woman.jpg" class="img-fluid avatar-image" alt="">
-
-                                <div class="text-center mt-3">
-                                    <span class="text-white">Candy</span>
-
-                                    <strong class="d-block text-white">VP, Design</strong>
-                                </div>
-                            </div>
-
-                            <div class="custom-block-info">
-                                <div class="reviews-group mb-3">
-                                    <strong>5</strong>
-
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                </div>
-
-                                <p class="mb-0">Please tell your friends about our website that we provide 100% free CSS
-                                    templates for everyone. Thank you for using our templates.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class="contact-section section-padding" id="section_5">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-5 col-12 mx-auto">
-                        <form class="custom-form ebook-download-form bg-white shadow" action="#" method="post"
-                            role="form">
-                            <div class="text-center mb-5">
-                                <h2 class="mb-1">Get your free ebook</h2>
-                            </div>
-
-                            <div class="ebook-download-form-body">
-                                <div class="input-group mb-4">
-                                    <input type="text" name="ebook-form-name" id="ebook-form-name" class="form-control"
-                                        aria-label="ebook-form-name" aria-describedby="basic-addon1"
-                                        placeholder="Your Name" required>
-
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <i class="custom-form-icon bi-person"></i>
-                                    </span>
-                                </div>
-
-                                <div class="input-group mb-4">
-                                    <input type="email" name="ebook-email" id="ebook-email" pattern="[^ @]*@[^ @]*"
-                                        class="form-control" placeholder="your@company.com"
-                                        aria-label="ebook-form-email" aria-describedby="basic-addon2" required="">
-
-                                    <span class="input-group-text" id="basic-addon2">
-                                        <i class="custom-form-icon bi-envelope"></i>
-                                    </span>
-                                </div>
-
-                                <div class="col-lg-8 col-md-10 col-8 mx-auto">
-                                    <button type="submit" class="form-control">Download ebook</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="col-lg-6 col-12">
-                        <h6 class="mt-5">Say hi and talk to us</h6>
-
-                        <h2 class="mb-4">Contact</h2>
-
-                        <p class="mb-3">
-                            <i class="bi-geo-alt me-2"></i>
-                            London, United Kingdom
+                    <div class="col-lg-6 col-12 reveal reveal-delay-1">
+                        <span class="section-tag">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                            Enfoque Práctico
+                        </span>
+
+                        <h2 class="section-title">Aprende lo que verdaderamente importa en producción</h2>
+
+                        <p class="lead">
+                            Olvídate de manuales densos llenos de teoría obsoleta. Este libro condensa años de experiencia resolviendo cuellos de botella reales en infraestructuras de misión crítica.
                         </p>
 
-                        <p class="mb-2">
-                            <a href="tel: 010-020-0340" class="contact-link">
-                                010-020-0340
-                            </a>
-                        </p>
-
-                        <p>
-                            <a href="mailto:info@company.com" class="contact-link">
-                                info@company.com
-                            </a>
-                        </p>
-
-                        <h6 class="site-footer-title mt-5 mb-3">Social</h6>
-
-                        <ul class="social-icon mb-4">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-instagram"></a>
+                        <ul class="feature-check-list">
+                            <li class="feature-check-item">
+                                <div class="feature-check-icon">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                                <div>
+                                    <strong>Patrones de Arquitectura Limpia & Serverless:</strong> Diseña sistemas desacoplados, tolerantes a fallos y económicos de operar.
+                                </div>
                             </li>
 
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            <li class="feature-check-item">
+                                <div class="feature-check-icon">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                                <div>
+                                    <strong>Automatización y Flujos de Trabajo:</strong> Elimina tareas manuales repetitivas con pipelines CI/CD y despliegues sin fricción.
+                                </div>
                             </li>
 
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-facebook"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-whatsapp"></a>
+                            <li class="feature-check-item">
+                                <div class="feature-check-icon">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                                <div>
+                                    <strong>Productividad Sostenible:</strong> Hábitos clave para entregar proyectos a tiempo sin caer en el agotamiento profesional.
+                                </div>
                             </li>
                         </ul>
 
-                        <p class="copyright-text">Copyright © 2048 ebook company
-                            <br><br><a rel="nofollow" href="https://templatemo.com" target="_blank">designed by
-                                templatemo</a>
-                        </p>
+                        <div class="d-flex gap-3 mt-4">
+                            <a href="#section_preview" class="btn-minimal btn-minimal-primary">
+                                <span>Ver Índice de Capítulos</span>
+                                <i class="bi bi-arrow-down-short"></i>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </section>
+
+        <!-- Chapters Explorer Section -->
+        <section class="chapters-section section-padding" id="section_preview">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8 col-12 reveal">
+                        <span class="section-tag">
+                            <i class="bi bi-collection-fill"></i>
+                            Contenido del Libro
+                        </span>
+                        <h2 class="section-title">Explora los capítulos clave</h2>
+                        <p class="section-description">
+                            Cada capítulo incluye explicaciones claras, diagramas de arquitectura y ejemplos de código listos para implementar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Chapter Selector Navigation -->
+                    <div class="col-lg-4 col-12 reveal">
+                        <div class="chapter-nav-card">
+                            <button class="chapter-nav-btn active" data-chapter-target="chapter-1">
+                                <div>
+                                    <span class="chapter-num">01</span>
+                                    <span>Fundamentos y Visión</span>
+                                </div>
+                                <span class="chapter-duration">15 min</span>
+                            </button>
+
+                            <button class="chapter-nav-btn" data-chapter-target="chapter-2">
+                                <div>
+                                    <span class="chapter-num">02</span>
+                                    <span>Recupera tu Tiempo</span>
+                                </div>
+                                <span class="chapter-duration">22 min</span>
+                            </button>
+
+                            <button class="chapter-nav-btn" data-chapter-target="chapter-3">
+                                <div>
+                                    <span class="chapter-num">03</span>
+                                    <span>Trabaja Menos, Haz Más</span>
+                                </div>
+                                <span class="chapter-duration">18 min</span>
+                            </button>
+
+                            <button class="chapter-nav-btn" data-chapter-target="chapter-4">
+                                <div>
+                                    <span class="chapter-num">04</span>
+                                    <span>Delegar y Escalar</span>
+                                </div>
+                                <span class="chapter-duration">25 min</span>
+                            </button>
+
+                            <button class="chapter-nav-btn" data-chapter-target="chapter-5">
+                                <div>
+                                    <span class="chapter-num">05</span>
+                                    <span>Hábitos de Excelencia</span>
+                                </div>
+                                <span class="chapter-duration">16 min</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Chapter Display Card -->
+                    <div class="col-lg-8 col-12 reveal reveal-delay-1">
+                        <div class="chapter-display-card">
+
+                            <!-- Pane 1 -->
+                            <div class="chapter-pane active" id="chapter-1">
+                                <span class="badge bg-light text-primary border mb-3 px-3 py-2">Capítulo 01</span>
+                                <h3>Introducción al Desarrollo Moderno & Arquitectura Ágil</h3>
+                                <p>
+                                    Establecemos los cimientos de la ingeniería moderna: cómo estructurar proyectos para que sean comprensibles hoy y mantenibles dentro de 5 años. Comprenderás la diferencia fundamental entre complejidad accidental y esencial.
+                                </p>
+
+                                <div class="chapter-quote-box">
+                                    "La simplicidad no es la ausencia de complejidad, sino la maestría para organizarla de forma intuitiva."
+                                </div>
+
+                                <h6 class="text-uppercase text-muted fw-bold mb-3">Puntos Clave del Capítulo:</h6>
+                                <div>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Principios SOLID aplicados</span>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Modelado de dominios limpios</span>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Evitar el sobre-diseño</span>
+                                </div>
+                            </div>
+
+                            <!-- Pane 2 -->
+                            <div class="chapter-pane" id="chapter-2">
+                                <span class="badge bg-light text-primary border mb-3 px-3 py-2">Capítulo 02</span>
+                                <h3>Recupera tu Tiempo: Automatización y Serverless</h3>
+                                <p>
+                                    Aprende a delegar en la infraestructura gestionada todo el peso operativo que antes consumía horas de guardia: despliegues continuos, funciones efímeras y observabilidad automatizada.
+                                </p>
+
+                                <div class="chapter-quote-box">
+                                    "Cada proceso manual en tu flujo de trabajo es una invitación abierta al error humano y a la pérdida de foco."
+                                </div>
+
+                                <h6 class="text-uppercase text-muted fw-bold mb-3">Puntos Clave del Capítulo:</h6>
+                                <div>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Pipelines CI/CD sin fricción</span>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Arquitectura impulsada por eventos</span>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Reducción de costes en la nube</span>
+                                </div>
+                            </div>
+
+                            <!-- Pane 3 -->
+                            <div class="chapter-pane" id="chapter-3">
+                                <span class="badge bg-light text-primary border mb-3 px-3 py-2">Capítulo 03</span>
+                                <h3>Trabaja Menos, Haz Más: El Enfoque del 80/20</h3>
+                                <p>
+                                    Descubre cómo identificar el 20% de las decisiones de diseño que generan el 80% del valor para los usuarios y la estabilidad de la plataforma, evitando reescrituras innecesarias.
+                                </p>
+
+                                <div class="chapter-quote-box">
+                                    "La productividad de un ingeniero no se mide en líneas de código redactadas, sino en problemas definitivamente resueltos."
+                                </div>
+
+                                <h6 class="text-uppercase text-muted fw-bold mb-3">Puntos Clave del Capítulo:</h6>
+                                <div>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Priorización con impacto real</span>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Refactorización segura y continua</span>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Pruebas que dan confianza</span>
+                                </div>
+                            </div>
+
+                            <!-- Pane 4 -->
+                            <div class="chapter-pane" id="chapter-4">
+                                <span class="badge bg-light text-primary border mb-3 px-3 py-2">Capítulo 04</span>
+                                <h3>Delegar y Escalar: Microservicios y Sistemas Distribuidos</h3>
+                                <p>
+                                    Manejo de estados, consistencia eventual y contratos de API resilientes. Un desglose realista de cuándo adoptar microservicios y cuándo un monolito modular sigue siendo tu mejor aliado.
+                                </p>
+
+                                <div class="chapter-quote-box">
+                                    "No distribuyas un sistema hasta que no entiendas a fondo cómo gestionar los fallos de red y las particiones de datos."
+                                </div>
+
+                                <h6 class="text-uppercase text-muted fw-bold mb-3">Puntos Clave del Capítulo:</h6>
+                                <div>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Monolito modular vs Microservicios</span>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Resiliencia con circuit breakers</span>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Trazabilidad distribuida</span>
+                                </div>
+                            </div>
+
+                            <!-- Pane 5 -->
+                            <div class="chapter-pane" id="chapter-5">
+                                <span class="badge bg-light text-primary border mb-3 px-3 py-2">Capítulo 05</span>
+                                <h3>Hábitos de Alto Rendimiento para Profesionales</h3>
+                                <p>
+                                    Cierra con una metodología de trabajo diaria: gestión de bloques de concentración, revisión de código constructiva y aprendizaje continuo en un ecosistema tecnológico que nunca se detiene.
+                                </p>
+
+                                <div class="chapter-quote-box">
+                                    "La consistencia diaria en pequeños hábitos de calidad supera con creces cualquier esfuerzo maratoniano esporádico."
+                                </div>
+
+                                <h6 class="text-uppercase text-muted fw-bold mb-3">Puntos Clave del Capítulo:</h6>
+                                <div>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Bloques de deep work</span>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Documentación viva y útil</span>
+                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Gestión de la fatiga técnica</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Author Section -->
+        <section class="author-section section-padding" id="section_3">
+            <div class="container">
+                <div class="author-card">
+                    <div class="row align-items-center g-5">
+
+                        <div class="col-lg-5 col-12 reveal">
+                            <div class="author-image-wrap">
+                                <img src="images/author-sophia.jpg" class="author-image" alt="Retrato de la Profesora Sophia">
+                                <div class="author-experience-pill">
+                                    <i class="bi bi-shield-check text-success me-1"></i>
+                                    15+ Años Liderando Equipos
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 col-12 reveal reveal-delay-1">
+                            <span class="section-tag">
+                                <i class="bi bi-person-badge-fill"></i>
+                                Sobre la Autora
+                            </span>
+
+                            <h2 class="section-title">Prof. Sophia Vance</h2>
+                            <p class="text-primary fw-semibold mb-3">Arquitecta de Software, Investigadora & Mentora Tecnológica</p>
+
+                            <p>
+                                Con más de una década y media liderando transformaciones tecnológicas en startups de rápido crecimiento y multinacionales, Sophia ha dedicado su carrera a democratizar el conocimiento de ingeniería de alto nivel.
+                            </p>
+
+                            <p>
+                                Ha asesorado a cientos de desarrolladores en más de 20 países y sus publicaciones sobre patrones de diseño y escalabilidad son referencia habitual en comunidades técnicas globales.
+                            </p>
+
+                            <div class="row g-3 my-4">
+                                <div class="col-sm-4 col-12">
+                                    <div class="author-stat-box">
+                                        <div class="author-stat-val">15+</div>
+                                        <div class="author-stat-name">Años de Trayectoria</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12">
+                                    <div class="author-stat-box">
+                                        <div class="author-stat-val">3</div>
+                                        <div class="author-stat-name">Libros Publicados</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12">
+                                    <div class="author-stat-box">
+                                        <div class="author-stat-val">50K+</div>
+                                        <div class="author-stat-name">Alumnos en Línea</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-3">
+                                <a href="#section_5" class="btn-minimal btn-minimal-primary">
+                                    <span>Contactar con la Autora</span>
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+
+                                <a href="https://github.com" target="_blank" class="social-link-btn" title="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" class="social-link-btn" title="Twitter">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" class="social-link-btn" title="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews & Testimonials Section -->
+        <section class="reviews-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8 col-12 reveal">
+                        <span class="section-tag">
+                            <i class="bi bi-chat-heart-fill"></i>
+                            Opiniones Verificadas
+                        </span>
+                        <h2 class="section-title">Lo que dicen quienes ya lo han leído</h2>
+                        <p class="section-description">
+                            Opiniones sinceras de desarrolladores, diseñadores y directores de ingeniería de todo el mundo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Review 1 -->
+                    <div class="col-lg-4 col-md-6 col-12 reveal">
+                        <div class="review-card">
+                            <div>
+                                <div class="review-card-header">
+                                    <img src="images/avatar/avatar-sandy.jpg" class="review-avatar" alt="Sandy Martinez">
+                                    <div>
+                                        <div class="review-author-name">Sandy Martínez</div>
+                                        <div class="review-author-role">Senior Frontend Engineer & Designer</div>
+                                    </div>
+                                </div>
+
+                                <div class="review-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+
+                                <p class="review-body">
+                                    "Rara vez un libro técnico logra un equilibrio tan perfecto entre rigor conceptual y aplicabilidad inmediata. Las explicaciones sobre arquitectura limpia transformaron la forma en que estructuro componentes y APIs."
+                                </p>
+                            </div>
+
+                            <div class="pt-3 border-top d-flex justify-content-between align-items-center text-muted small">
+                                <span><i class="bi bi-patch-check-fill text-primary me-1"></i> Compra verificada</span>
+                                <span>Hace 2 semanas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="col-lg-4 col-md-6 col-12 reveal reveal-delay-1">
+                        <div class="review-card">
+                            <div>
+                                <div class="review-card-header">
+                                    <img src="images/avatar/avatar-john.jpg" class="review-avatar" alt="John Evans">
+                                    <div>
+                                        <div class="review-author-name">John Evans</div>
+                                        <div class="review-author-role">Tech Lead & Cloud Architect</div>
+                                    </div>
+                                </div>
+
+                                <div class="review-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+
+                                <p class="review-body">
+                                    "El capítulo sobre automatización y reducción de tareas manuales nos ahorró decenas de horas de trabajo este trimestre. Directo al punto, sin relleno y con ejemplos reales que funcionan en el mundo corporativo."
+                                </p>
+                            </div>
+
+                            <div class="pt-3 border-top d-flex justify-content-between align-items-center text-muted small">
+                                <span><i class="bi bi-patch-check-fill text-primary me-1"></i> Compra verificada</span>
+                                <span>Hace 1 mes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="col-lg-4 col-md-6 col-12 reveal reveal-delay-2">
+                        <div class="review-card">
+                            <div>
+                                <div class="review-card-header">
+                                    <img src="images/avatar/avatar-candy.jpg" class="review-avatar" alt="Candy Reynolds">
+                                    <div>
+                                        <div class="review-author-name">Candy Reynolds</div>
+                                        <div class="review-author-role">VP of Product & Engineering</div>
+                                    </div>
+                                </div>
+
+                                <div class="review-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+
+                                <p class="review-body">
+                                    "Se lo he recomendado a todo mi equipo de desarrollo. La claridad con la que aborda la gestión de la deuda técnica y los hábitos de entrega continua es simplemente brillante. Una lectura obligada."
+                                </p>
+                            </div>
+
+                            <div class="pt-3 border-top d-flex justify-content-between align-items-center text-muted small">
+                                <span><i class="bi bi-patch-check-fill text-primary me-1"></i> Compra verificada</span>
+                                <span>Hace 3 semanas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download & Contact Section -->
+        <section class="contact-section section-padding" id="section_5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+
+                    <!-- Download Form -->
+                    <div class="col-lg-6 col-12 reveal">
+                        <div class="download-form-card">
+                            <span class="section-tag mb-3">
+                                <i class="bi bi-cloud-arrow-down-fill"></i>
+                                Descarga Inmediata
+                            </span>
+
+                            <h3 class="mb-2">Obtén tu copia gratuita</h3>
+                            <p class="text-muted mb-4">Elige tu formato preferido y recibe los primeros capítulos y ejemplos de código directamente en tu correo.</p>
+
+                            <!-- Format Selector -->
+                            <div class="format-pills">
+                                <div class="format-pill active" data-format="pdf">
+                                    <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                                </div>
+                                <div class="format-pill" data-format="epub">
+                                    <i class="bi bi-tablet me-1"></i> ePub
+                                </div>
+                                <div class="format-pill" data-format="mobi">
+                                    <i class="bi bi-book me-1"></i> Kindle
+                                </div>
+                            </div>
+
+                            <form class="custom-form ebook-download-form" action="#" method="post">
+                                <div class="custom-input-group">
+                                    <input type="text" name="ebook-form-name" id="ebook-form-name" class="custom-input"
+                                        placeholder="Tu Nombre Completo" required>
+                                    <i class="bi bi-person input-icon"></i>
+                                </div>
+
+                                <div class="custom-input-group">
+                                    <input type="email" name="ebook-email" id="ebook-email" class="custom-input"
+                                        placeholder="tu-correo@empresa.com" required>
+                                    <i class="bi bi-envelope input-icon"></i>
+                                </div>
+
+                                <button type="submit" class="btn-minimal btn-minimal-primary w-100 py-3 mt-2">
+                                    <span>Descargar Ebook Ahora</span>
+                                    <i class="bi bi-download"></i>
+                                </button>
+
+                                <div class="text-center mt-3">
+                                    <small class="text-muted">
+                                        <i class="bi bi-lock-fill me-1 text-success"></i>
+                                        100% Gratuito y libre de spam. Puedes darte de baja en cualquier momento.
+                                    </small>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="col-lg-6 col-12 reveal reveal-delay-1">
+                        <div class="contact-info-card">
+                            <span class="section-tag mb-3">
+                                <i class="bi bi-chat-dots-fill"></i>
+                                Soporte & Consultas
+                            </span>
+
+                            <h2 class="section-title">¿Tienes preguntas o propuestas?</h2>
+                            <p class="lead mb-4">
+                                ¿Quieres organizar un taller para tu equipo o necesitas licencias corporativas? Nuestro equipo responderá en menos de 24 horas.
+                            </p>
+
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div>
+                                    <div class="text-muted small">Ubicación</div>
+                                    <div class="fw-semibold text-dark">Londres & Madrid (Remoto Global)</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="text-muted small">Correo Electrónico</div>
+                                    <a href="mailto:hola@ebookcloud.dev" class="fw-semibold text-dark">hola@ebookcloud.dev</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <div>
+                                    <div class="text-muted small">Teléfono / WhatsApp</div>
+                                    <a href="tel:+34912345678" class="fw-semibold text-dark">+34 912 345 678</a>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-2">
+                                <div class="fw-semibold text-dark mb-2">Síguenos en Redes:</div>
+                                <ul class="social-links">
+                                    <li><a href="#" class="social-link-btn" title="Twitter"><i class="bi bi-twitter-x"></i></a></li>
+                                    <li><a href="#" class="social-link-btn" title="GitHub"><i class="bi bi-github"></i></a></li>
+                                    <li><a href="#" class="social-link-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                                    <li><a href="#" class="social-link-btn" title="YouTube"><i class="bi bi-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <script src="js/jquery.min.js"></script>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12 text-center text-md-start mb-3 mb-md-0">
+                    <p class="footer-text">
+                        © 2026 Ebook Company. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 col-12 text-center text-md-end">
+                    <p class="footer-text">
+                        Diseñado con estética minimalista y rendimiento óptimo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification for Download Feedback -->
+    <div class="toast-feedback" id="toastFeedback">
+        <i class="bi bi-check-circle-fill text-success fs-5"></i>
+        <span class="toast-msg">¡Descarga procesada con éxito!</span>
+    </div>
+
+    <!-- Scripts -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/click-scroll.js"></script>
-    <script src="js/custom.js"></script>
-
-
+    <script src="js/app.js"></script>
 
 </body>
 
