@@ -3,7 +3,47 @@
  * Pure Vanilla JavaScript: Smooth Transitions, Scrollspy, Animations, Interactions
  */
 
+const API_URL = "https://n8q456xvr5.execute-api.us-east-1.amazonaws.com/dev/contact"
+
 document.addEventListener('DOMContentLoaded', () => {
+
+  const _form = document.querySelector('.ebook-download-form');
+
+  if(!_form) return;
+
+  _form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.getElementById("ebook-form-name").value;
+    const email = document.getElementById("ebook-form-email").value;
+    const payload = {name, email}
+    console.log("Sending payload", payload)
+
+    try {
+      const response = fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      })
+
+      const result = await response;
+
+      if(!(await response).ok) {
+        throw new Error(`HTTP error! status: ${result.status}`);
+      }
+
+
+      alert(result.message)
+
+      _form.reset();
+
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  } )
+
+
   // 1. Navbar Scroll Effect
   const navbar = document.querySelector('.navbar');
   const handleScroll = () => {

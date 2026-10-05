@@ -1,779 +1,1056 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ebook definitivo sobre desarrollo moderno, cloud y arquitectura de software. Diseño minimalista y práctico.">
-    <meta name="author" content="Prof. Sophia">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ebook definitivo sobre desarrollo moderno, cloud y arquitectura de software. Diseño minimalista y práctico."
+    />
+    <meta name="author" content="Prof. Sophia" />
 
     <title>Ebook | Guía Definitiva de Arquitectura & Código Limpio</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-    <link href="css/templatemo-ebook-landing.css" rel="stylesheet">
-</head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/templatemo-ebook-landing.css" rel="stylesheet" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Sticky Frosted Navbar -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#section_1">
-                <div class="navbar-brand-icon-wrap">
-                    <i class="bi bi-book-half"></i>
-                </div>
-                <span>Ebook</span>
-            </a>
+      <div class="container">
+        <a class="navbar-brand" href="#section_1">
+          <div class="navbar-brand-icon-wrap">
+            <i class="bi bi-book-half"></i>
+          </div>
+          <span>Ebook</span>
+        </a>
 
-            <div class="d-lg-none ms-auto me-3">
-                <a href="#section_5" class="btn-minimal btn-minimal-primary btn-minimal-sm">
-                    <i class="bi bi-cloud-arrow-down"></i>
-                    <span>Descargar</span>
-                </a>
-            </div>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-lg-auto me-lg-4">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#section_1">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section_2">El Libro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section_preview">Capítulos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section_3">Autora</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section_4">Opiniones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section_5">Contacto</a>
-                    </li>
-                </ul>
-
-                <div class="d-none d-lg-block">
-                    <a href="#section_5" class="btn-minimal btn-minimal-primary btn-minimal-sm">
-                        <i class="bi bi-cloud-arrow-down"></i>
-                        <span>Descargar Gratis</span>
-                    </a>
-                </div>
-            </div>
+        <div class="d-lg-none ms-auto me-3">
+          <a
+            href="#section_5"
+            class="btn-minimal btn-minimal-primary btn-minimal-sm"
+          >
+            <i class="bi bi-cloud-arrow-down"></i>
+            <span>Descargar</span>
+          </a>
         </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-lg-auto me-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#section_1">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section_2">El Libro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section_preview">Capítulos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section_3">Autora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section_4">Opiniones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section_5">Contacto</a>
+            </li>
+          </ul>
+
+          <div class="d-none d-lg-block">
+            <a
+              href="#section_5"
+              class="btn-minimal btn-minimal-primary btn-minimal-sm"
+            >
+              <i class="bi bi-cloud-arrow-down"></i>
+              <span>Descargar Gratis</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="section_1">
+        <div class="hero-glow-blob hero-glow-blob-1"></div>
+        <div class="hero-glow-blob hero-glow-blob-2"></div>
 
-        <!-- Hero Section -->
-        <section class="hero-section" id="section_1">
-            <div class="hero-glow-blob hero-glow-blob-1"></div>
-            <div class="hero-glow-blob hero-glow-blob-2"></div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12 hero-content reveal">
+              <div class="hero-badge">
+                <span class="badge-pulse-dot"></span>
+                <span>Nueva Edición 2026 • Acceso Inmediato</span>
+              </div>
 
-            <div class="container">
-                <div class="row align-items-center">
+              <h1 class="hero-title">
+                Domina el código, la nube y la
+                <span class="hero-title-highlight">arquitectura moderna</span>
+              </h1>
 
-                    <div class="col-lg-6 col-12 hero-content reveal">
-                        <div class="hero-badge">
-                            <span class="badge-pulse-dot"></span>
-                            <span>Nueva Edición 2026 • Acceso Inmediato</span>
-                        </div>
+              <p class="hero-lead">
+                Una guía exhaustiva, elegante y 100% práctica creada para
+                ingenieros y profesionales que buscan construir sistemas
+                escalables y recuperar el control de su tiempo.
+              </p>
 
-                        <h1 class="hero-title">
-                            Domina el código, la nube y la
-                            <span class="hero-title-highlight">arquitectura moderna</span>
-                        </h1>
+              <div class="hero-cta-group">
+                <a href="#section_5" class="btn-minimal btn-minimal-primary">
+                  <span>Descargar Muestra Gratis</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
 
-                        <p class="hero-lead">
-                            Una guía exhaustiva, elegante y 100% práctica creada para ingenieros y profesionales que buscan construir sistemas escalables y recuperar el control de su tiempo.
-                        </p>
+                <a href="#section_2" class="btn-minimal btn-minimal-outline">
+                  <i class="bi bi-journal-text"></i>
+                  <span>Explorar Contenido</span>
+                </a>
+              </div>
 
-                        <div class="hero-cta-group">
-                            <a href="#section_5" class="btn-minimal btn-minimal-primary">
-                                <span>Descargar Muestra Gratis</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-
-                            <a href="#section_2" class="btn-minimal btn-minimal-outline">
-                                <i class="bi bi-journal-text"></i>
-                                <span>Explorar Contenido</span>
-                            </a>
-                        </div>
-
-                        <div class="hero-proof">
-                            <div class="avatar-stack">
-                                <img src="images/avatar/avatar-sandy.jpg" class="avatar-stack-item" alt="Lector Sandy">
-                                <img src="images/avatar/avatar-john.jpg" class="avatar-stack-item" alt="Lector John">
-                                <img src="images/avatar/avatar-candy.jpg" class="avatar-stack-item" alt="Lectora Candy">
-                                <img src="images/avatar/avatar-sophia.jpg" class="avatar-stack-item" alt="Autora Sophia">
-                            </div>
-
-                            <div class="hero-proof-text">
-                                <div class="stars-rating">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                                <span class="ms-1 fw-bold text-dark">4.9/5</span>
-                                <span class="text-muted d-block small">+15,000 profesionales ya lo están leyendo</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12 mt-5 mt-lg-0 hero-visual-col reveal reveal-delay-2">
-                        <div class="book-display-container">
-                            <div class="floating-chip chip-badge-top">
-                                <div class="chip-icon chip-icon-primary">
-                                    <i class="bi bi-award-fill"></i>
-                                </div>
-                                <div>
-                                    <div class="fw-bold">#1 Más Leído</div>
-                                    <div class="text-muted small">DevOps & Cloud 2026</div>
-                                </div>
-                            </div>
-
-                            <div class="book-display-card">
-                                <img src="images/hero-book.jpg" class="book-display-image" alt="Portada Ebook Mastering Code & Cloud">
-                            </div>
-
-                            <div class="floating-chip chip-badge-bottom">
-                                <div class="chip-icon chip-icon-success">
-                                    <i class="bi bi-file-earmark-code"></i>
-                                </div>
-                                <div>
-                                    <div class="fw-bold">+280 Páginas</div>
-                                    <div class="text-muted small">Ejemplos reales descargables</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+              <div class="hero-proof">
+                <div class="avatar-stack">
+                  <img
+                    src="images/avatar/avatar-sandy.jpg"
+                    class="avatar-stack-item"
+                    alt="Lector Sandy"
+                  />
+                  <img
+                    src="images/avatar/avatar-john.jpg"
+                    class="avatar-stack-item"
+                    alt="Lector John"
+                  />
+                  <img
+                    src="images/avatar/avatar-candy.jpg"
+                    class="avatar-stack-item"
+                    alt="Lectora Candy"
+                  />
+                  <img
+                    src="images/avatar/avatar-sophia.jpg"
+                    class="avatar-stack-item"
+                    alt="Autora Sophia"
+                  />
                 </div>
+
+                <div class="hero-proof-text">
+                  <div class="stars-rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <span class="ms-1 fw-bold text-dark">4.9/5</span>
+                  <span class="text-muted d-block small"
+                    >+15,000 profesionales ya lo están leyendo</span
+                  >
+                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Stats / Metrics Strip -->
-        <section class="stats-strip">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-md-3 col-6 stat-item stat-divider reveal">
-                        <div class="stat-number">15K+</div>
-                        <div class="stat-label">Copias Distribuidas</div>
-                    </div>
-
-                    <div class="col-md-3 col-6 stat-item stat-divider reveal reveal-delay-1">
-                        <div class="stat-number">4.9/5</div>
-                        <div class="stat-label">Valoración Promedio</div>
-                    </div>
-
-                    <div class="col-md-3 col-6 stat-item stat-divider reveal reveal-delay-2">
-                        <div class="stat-number">12</div>
-                        <div class="stat-label">Capítulos Prácticos</div>
-                    </div>
-
-                    <div class="col-md-3 col-6 stat-item reveal reveal-delay-3">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Garantía de Claridad</div>
-                    </div>
+            <div
+              class="col-lg-6 col-12 mt-5 mt-lg-0 hero-visual-col reveal reveal-delay-2"
+            >
+              <div class="book-display-container">
+                <div class="floating-chip chip-badge-top">
+                  <div class="chip-icon chip-icon-primary">
+                    <i class="bi bi-award-fill"></i>
+                  </div>
+                  <div>
+                    <div class="fw-bold">#1 Más Leído</div>
+                    <div class="text-muted small">DevOps & Cloud 2026</div>
+                  </div>
                 </div>
+
+                <div class="book-display-card">
+                  <img
+                    src="images/hero-book.jpg"
+                    class="book-display-image"
+                    alt="Portada Ebook Mastering Code & Cloud"
+                  />
+                </div>
+
+                <div class="floating-chip chip-badge-bottom">
+                  <div class="chip-icon chip-icon-success">
+                    <i class="bi bi-file-earmark-code"></i>
+                  </div>
+                  <div>
+                    <div class="fw-bold">+280 Páginas</div>
+                    <div class="text-muted small">
+                      Ejemplos reales descargables
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- About The Book Section -->
-        <section class="book-section section-padding" id="section_2">
-            <div class="container">
-                <div class="row align-items-center g-5">
-
-                    <div class="col-lg-6 col-12 reveal">
-                        <div class="book-preview-wrap">
-                            <img src="images/tablet-preview.jpg" class="book-preview-img" alt="Previsualización del libro en tablet">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12 reveal reveal-delay-1">
-                        <span class="section-tag">
-                            <i class="bi bi-lightning-charge-fill"></i>
-                            Enfoque Práctico
-                        </span>
-
-                        <h2 class="section-title">Aprende lo que verdaderamente importa en producción</h2>
-
-                        <p class="lead">
-                            Olvídate de manuales densos llenos de teoría obsoleta. Este libro condensa años de experiencia resolviendo cuellos de botella reales en infraestructuras de misión crítica.
-                        </p>
-
-                        <ul class="feature-check-list">
-                            <li class="feature-check-item">
-                                <div class="feature-check-icon">
-                                    <i class="bi bi-check-lg"></i>
-                                </div>
-                                <div>
-                                    <strong>Patrones de Arquitectura Limpia & Serverless:</strong> Diseña sistemas desacoplados, tolerantes a fallos y económicos de operar.
-                                </div>
-                            </li>
-
-                            <li class="feature-check-item">
-                                <div class="feature-check-icon">
-                                    <i class="bi bi-check-lg"></i>
-                                </div>
-                                <div>
-                                    <strong>Automatización y Flujos de Trabajo:</strong> Elimina tareas manuales repetitivas con pipelines CI/CD y despliegues sin fricción.
-                                </div>
-                            </li>
-
-                            <li class="feature-check-item">
-                                <div class="feature-check-icon">
-                                    <i class="bi bi-check-lg"></i>
-                                </div>
-                                <div>
-                                    <strong>Productividad Sostenible:</strong> Hábitos clave para entregar proyectos a tiempo sin caer en el agotamiento profesional.
-                                </div>
-                            </li>
-                        </ul>
-
-                        <div class="d-flex gap-3 mt-4">
-                            <a href="#section_preview" class="btn-minimal btn-minimal-primary">
-                                <span>Ver Índice de Capítulos</span>
-                                <i class="bi bi-arrow-down-short"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
+      <!-- Stats / Metrics Strip -->
+      <section class="stats-strip">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-md-3 col-6 stat-item stat-divider reveal">
+              <div class="stat-number">15K+</div>
+              <div class="stat-label">Copias Distribuidas</div>
             </div>
-        </section>
 
-        <!-- Chapters Explorer Section -->
-        <section class="chapters-section section-padding" id="section_preview">
-            <div class="container">
-                <div class="row justify-content-center text-center mb-5">
-                    <div class="col-lg-8 col-12 reveal">
-                        <span class="section-tag">
-                            <i class="bi bi-collection-fill"></i>
-                            Contenido del Libro
-                        </span>
-                        <h2 class="section-title">Explora los capítulos clave</h2>
-                        <p class="section-description">
-                            Cada capítulo incluye explicaciones claras, diagramas de arquitectura y ejemplos de código listos para implementar.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row g-4">
-                    <!-- Chapter Selector Navigation -->
-                    <div class="col-lg-4 col-12 reveal">
-                        <div class="chapter-nav-card">
-                            <button class="chapter-nav-btn active" data-chapter-target="chapter-1">
-                                <div>
-                                    <span class="chapter-num">01</span>
-                                    <span>Fundamentos y Visión</span>
-                                </div>
-                                <span class="chapter-duration">15 min</span>
-                            </button>
-
-                            <button class="chapter-nav-btn" data-chapter-target="chapter-2">
-                                <div>
-                                    <span class="chapter-num">02</span>
-                                    <span>Recupera tu Tiempo</span>
-                                </div>
-                                <span class="chapter-duration">22 min</span>
-                            </button>
-
-                            <button class="chapter-nav-btn" data-chapter-target="chapter-3">
-                                <div>
-                                    <span class="chapter-num">03</span>
-                                    <span>Trabaja Menos, Haz Más</span>
-                                </div>
-                                <span class="chapter-duration">18 min</span>
-                            </button>
-
-                            <button class="chapter-nav-btn" data-chapter-target="chapter-4">
-                                <div>
-                                    <span class="chapter-num">04</span>
-                                    <span>Delegar y Escalar</span>
-                                </div>
-                                <span class="chapter-duration">25 min</span>
-                            </button>
-
-                            <button class="chapter-nav-btn" data-chapter-target="chapter-5">
-                                <div>
-                                    <span class="chapter-num">05</span>
-                                    <span>Hábitos de Excelencia</span>
-                                </div>
-                                <span class="chapter-duration">16 min</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Chapter Display Card -->
-                    <div class="col-lg-8 col-12 reveal reveal-delay-1">
-                        <div class="chapter-display-card">
-
-                            <!-- Pane 1 -->
-                            <div class="chapter-pane active" id="chapter-1">
-                                <span class="badge bg-light text-primary border mb-3 px-3 py-2">Capítulo 01</span>
-                                <h3>Introducción al Desarrollo Moderno & Arquitectura Ágil</h3>
-                                <p>
-                                    Establecemos los cimientos de la ingeniería moderna: cómo estructurar proyectos para que sean comprensibles hoy y mantenibles dentro de 5 años. Comprenderás la diferencia fundamental entre complejidad accidental y esencial.
-                                </p>
-
-                                <div class="chapter-quote-box">
-                                    "La simplicidad no es la ausencia de complejidad, sino la maestría para organizarla de forma intuitiva."
-                                </div>
-
-                                <h6 class="text-uppercase text-muted fw-bold mb-3">Puntos Clave del Capítulo:</h6>
-                                <div>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Principios SOLID aplicados</span>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Modelado de dominios limpios</span>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Evitar el sobre-diseño</span>
-                                </div>
-                            </div>
-
-                            <!-- Pane 2 -->
-                            <div class="chapter-pane" id="chapter-2">
-                                <span class="badge bg-light text-primary border mb-3 px-3 py-2">Capítulo 02</span>
-                                <h3>Recupera tu Tiempo: Automatización y Serverless</h3>
-                                <p>
-                                    Aprende a delegar en la infraestructura gestionada todo el peso operativo que antes consumía horas de guardia: despliegues continuos, funciones efímeras y observabilidad automatizada.
-                                </p>
-
-                                <div class="chapter-quote-box">
-                                    "Cada proceso manual en tu flujo de trabajo es una invitación abierta al error humano y a la pérdida de foco."
-                                </div>
-
-                                <h6 class="text-uppercase text-muted fw-bold mb-3">Puntos Clave del Capítulo:</h6>
-                                <div>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Pipelines CI/CD sin fricción</span>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Arquitectura impulsada por eventos</span>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Reducción de costes en la nube</span>
-                                </div>
-                            </div>
-
-                            <!-- Pane 3 -->
-                            <div class="chapter-pane" id="chapter-3">
-                                <span class="badge bg-light text-primary border mb-3 px-3 py-2">Capítulo 03</span>
-                                <h3>Trabaja Menos, Haz Más: El Enfoque del 80/20</h3>
-                                <p>
-                                    Descubre cómo identificar el 20% de las decisiones de diseño que generan el 80% del valor para los usuarios y la estabilidad de la plataforma, evitando reescrituras innecesarias.
-                                </p>
-
-                                <div class="chapter-quote-box">
-                                    "La productividad de un ingeniero no se mide en líneas de código redactadas, sino en problemas definitivamente resueltos."
-                                </div>
-
-                                <h6 class="text-uppercase text-muted fw-bold mb-3">Puntos Clave del Capítulo:</h6>
-                                <div>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Priorización con impacto real</span>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Refactorización segura y continua</span>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Pruebas que dan confianza</span>
-                                </div>
-                            </div>
-
-                            <!-- Pane 4 -->
-                            <div class="chapter-pane" id="chapter-4">
-                                <span class="badge bg-light text-primary border mb-3 px-3 py-2">Capítulo 04</span>
-                                <h3>Delegar y Escalar: Microservicios y Sistemas Distribuidos</h3>
-                                <p>
-                                    Manejo de estados, consistencia eventual y contratos de API resilientes. Un desglose realista de cuándo adoptar microservicios y cuándo un monolito modular sigue siendo tu mejor aliado.
-                                </p>
-
-                                <div class="chapter-quote-box">
-                                    "No distribuyas un sistema hasta que no entiendas a fondo cómo gestionar los fallos de red y las particiones de datos."
-                                </div>
-
-                                <h6 class="text-uppercase text-muted fw-bold mb-3">Puntos Clave del Capítulo:</h6>
-                                <div>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Monolito modular vs Microservicios</span>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Resiliencia con circuit breakers</span>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Trazabilidad distribuida</span>
-                                </div>
-                            </div>
-
-                            <!-- Pane 5 -->
-                            <div class="chapter-pane" id="chapter-5">
-                                <span class="badge bg-light text-primary border mb-3 px-3 py-2">Capítulo 05</span>
-                                <h3>Hábitos de Alto Rendimiento para Profesionales</h3>
-                                <p>
-                                    Cierra con una metodología de trabajo diaria: gestión de bloques de concentración, revisión de código constructiva y aprendizaje continuo en un ecosistema tecnológico que nunca se detiene.
-                                </p>
-
-                                <div class="chapter-quote-box">
-                                    "La consistencia diaria en pequeños hábitos de calidad supera con creces cualquier esfuerzo maratoniano esporádico."
-                                </div>
-
-                                <h6 class="text-uppercase text-muted fw-bold mb-3">Puntos Clave del Capítulo:</h6>
-                                <div>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Bloques de deep work</span>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Documentación viva y útil</span>
-                                    <span class="takeaway-tag"><i class="bi bi-check-circle text-primary"></i> Gestión de la fatiga técnica</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+            <div
+              class="col-md-3 col-6 stat-item stat-divider reveal reveal-delay-1"
+            >
+              <div class="stat-number">4.9/5</div>
+              <div class="stat-label">Valoración Promedio</div>
             </div>
-        </section>
 
-        <!-- Author Section -->
-        <section class="author-section section-padding" id="section_3">
-            <div class="container">
-                <div class="author-card">
-                    <div class="row align-items-center g-5">
-
-                        <div class="col-lg-5 col-12 reveal">
-                            <div class="author-image-wrap">
-                                <img src="images/author-sophia.jpg" class="author-image" alt="Retrato de la Profesora Sophia">
-                                <div class="author-experience-pill">
-                                    <i class="bi bi-shield-check text-success me-1"></i>
-                                    15+ Años Liderando Equipos
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-7 col-12 reveal reveal-delay-1">
-                            <span class="section-tag">
-                                <i class="bi bi-person-badge-fill"></i>
-                                Sobre la Autora
-                            </span>
-
-                            <h2 class="section-title">Prof. Sophia Vance</h2>
-                            <p class="text-primary fw-semibold mb-3">Arquitecta de Software, Investigadora & Mentora Tecnológica</p>
-
-                            <p>
-                                Con más de una década y media liderando transformaciones tecnológicas en startups de rápido crecimiento y multinacionales, Sophia ha dedicado su carrera a democratizar el conocimiento de ingeniería de alto nivel.
-                            </p>
-
-                            <p>
-                                Ha asesorado a cientos de desarrolladores en más de 20 países y sus publicaciones sobre patrones de diseño y escalabilidad son referencia habitual en comunidades técnicas globales.
-                            </p>
-
-                            <div class="row g-3 my-4">
-                                <div class="col-sm-4 col-12">
-                                    <div class="author-stat-box">
-                                        <div class="author-stat-val">15+</div>
-                                        <div class="author-stat-name">Años de Trayectoria</div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-12">
-                                    <div class="author-stat-box">
-                                        <div class="author-stat-val">3</div>
-                                        <div class="author-stat-name">Libros Publicados</div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-12">
-                                    <div class="author-stat-box">
-                                        <div class="author-stat-val">50K+</div>
-                                        <div class="author-stat-name">Alumnos en Línea</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center gap-3">
-                                <a href="#section_5" class="btn-minimal btn-minimal-primary">
-                                    <span>Contactar con la Autora</span>
-                                    <i class="bi bi-envelope"></i>
-                                </a>
-
-                                <a href="https://github.com" target="_blank" class="social-link-btn" title="GitHub">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="https://twitter.com" target="_blank" class="social-link-btn" title="Twitter">
-                                    <i class="bi bi-twitter-x"></i>
-                                </a>
-                                <a href="https://linkedin.com" target="_blank" class="social-link-btn" title="LinkedIn">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+            <div
+              class="col-md-3 col-6 stat-item stat-divider reveal reveal-delay-2"
+            >
+              <div class="stat-number">12</div>
+              <div class="stat-label">Capítulos Prácticos</div>
             </div>
-        </section>
 
-        <!-- Reviews & Testimonials Section -->
-        <section class="reviews-section section-padding" id="section_4">
-            <div class="container">
-                <div class="row justify-content-center text-center mb-5">
-                    <div class="col-lg-8 col-12 reveal">
-                        <span class="section-tag">
-                            <i class="bi bi-chat-heart-fill"></i>
-                            Opiniones Verificadas
-                        </span>
-                        <h2 class="section-title">Lo que dicen quienes ya lo han leído</h2>
-                        <p class="section-description">
-                            Opiniones sinceras de desarrolladores, diseñadores y directores de ingeniería de todo el mundo.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row g-4">
-                    <!-- Review 1 -->
-                    <div class="col-lg-4 col-md-6 col-12 reveal">
-                        <div class="review-card">
-                            <div>
-                                <div class="review-card-header">
-                                    <img src="images/avatar/avatar-sandy.jpg" class="review-avatar" alt="Sandy Martinez">
-                                    <div>
-                                        <div class="review-author-name">Sandy Martínez</div>
-                                        <div class="review-author-role">Senior Frontend Engineer & Designer</div>
-                                    </div>
-                                </div>
-
-                                <div class="review-stars">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-
-                                <p class="review-body">
-                                    "Rara vez un libro técnico logra un equilibrio tan perfecto entre rigor conceptual y aplicabilidad inmediata. Las explicaciones sobre arquitectura limpia transformaron la forma en que estructuro componentes y APIs."
-                                </p>
-                            </div>
-
-                            <div class="pt-3 border-top d-flex justify-content-between align-items-center text-muted small">
-                                <span><i class="bi bi-patch-check-fill text-primary me-1"></i> Compra verificada</span>
-                                <span>Hace 2 semanas</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Review 2 -->
-                    <div class="col-lg-4 col-md-6 col-12 reveal reveal-delay-1">
-                        <div class="review-card">
-                            <div>
-                                <div class="review-card-header">
-                                    <img src="images/avatar/avatar-john.jpg" class="review-avatar" alt="John Evans">
-                                    <div>
-                                        <div class="review-author-name">John Evans</div>
-                                        <div class="review-author-role">Tech Lead & Cloud Architect</div>
-                                    </div>
-                                </div>
-
-                                <div class="review-stars">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-
-                                <p class="review-body">
-                                    "El capítulo sobre automatización y reducción de tareas manuales nos ahorró decenas de horas de trabajo este trimestre. Directo al punto, sin relleno y con ejemplos reales que funcionan en el mundo corporativo."
-                                </p>
-                            </div>
-
-                            <div class="pt-3 border-top d-flex justify-content-between align-items-center text-muted small">
-                                <span><i class="bi bi-patch-check-fill text-primary me-1"></i> Compra verificada</span>
-                                <span>Hace 1 mes</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Review 3 -->
-                    <div class="col-lg-4 col-md-6 col-12 reveal reveal-delay-2">
-                        <div class="review-card">
-                            <div>
-                                <div class="review-card-header">
-                                    <img src="images/avatar/avatar-candy.jpg" class="review-avatar" alt="Candy Reynolds">
-                                    <div>
-                                        <div class="review-author-name">Candy Reynolds</div>
-                                        <div class="review-author-role">VP of Product & Engineering</div>
-                                    </div>
-                                </div>
-
-                                <div class="review-stars">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-
-                                <p class="review-body">
-                                    "Se lo he recomendado a todo mi equipo de desarrollo. La claridad con la que aborda la gestión de la deuda técnica y los hábitos de entrega continua es simplemente brillante. Una lectura obligada."
-                                </p>
-                            </div>
-
-                            <div class="pt-3 border-top d-flex justify-content-between align-items-center text-muted small">
-                                <span><i class="bi bi-patch-check-fill text-primary me-1"></i> Compra verificada</span>
-                                <span>Hace 3 semanas</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-3 col-6 stat-item reveal reveal-delay-3">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Garantía de Claridad</div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Download & Contact Section -->
-        <section class="contact-section section-padding" id="section_5">
-            <div class="container">
-                <div class="row align-items-center g-5">
-
-                    <!-- Download Form -->
-                    <div class="col-lg-6 col-12 reveal">
-                        <div class="download-form-card">
-                            <span class="section-tag mb-3">
-                                <i class="bi bi-cloud-arrow-down-fill"></i>
-                                Descarga Inmediata
-                            </span>
-
-                            <h3 class="mb-2">Obtén tu copia gratuita</h3>
-                            <p class="text-muted mb-4">Elige tu formato preferido y recibe los primeros capítulos y ejemplos de código directamente en tu correo.</p>
-
-                            <!-- Format Selector -->
-                            <div class="format-pills">
-                                <div class="format-pill active" data-format="pdf">
-                                    <i class="bi bi-file-earmark-pdf me-1"></i> PDF
-                                </div>
-                                <div class="format-pill" data-format="epub">
-                                    <i class="bi bi-tablet me-1"></i> ePub
-                                </div>
-                                <div class="format-pill" data-format="mobi">
-                                    <i class="bi bi-book me-1"></i> Kindle
-                                </div>
-                            </div>
-
-                            <form class="custom-form ebook-download-form" action="#" method="post">
-                                <div class="custom-input-group">
-                                    <input type="text" name="ebook-form-name" id="ebook-form-name" class="custom-input"
-                                        placeholder="Tu Nombre Completo" required>
-                                    <i class="bi bi-person input-icon"></i>
-                                </div>
-
-                                <div class="custom-input-group">
-                                    <input type="email" name="ebook-email" id="ebook-email" class="custom-input"
-                                        placeholder="tu-correo@empresa.com" required>
-                                    <i class="bi bi-envelope input-icon"></i>
-                                </div>
-
-                                <button type="submit" class="btn-minimal btn-minimal-primary w-100 py-3 mt-2">
-                                    <span>Descargar Ebook Ahora</span>
-                                    <i class="bi bi-download"></i>
-                                </button>
-
-                                <div class="text-center mt-3">
-                                    <small class="text-muted">
-                                        <i class="bi bi-lock-fill me-1 text-success"></i>
-                                        100% Gratuito y libre de spam. Puedes darte de baja en cualquier momento.
-                                    </small>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <!-- Contact Details -->
-                    <div class="col-lg-6 col-12 reveal reveal-delay-1">
-                        <div class="contact-info-card">
-                            <span class="section-tag mb-3">
-                                <i class="bi bi-chat-dots-fill"></i>
-                                Soporte & Consultas
-                            </span>
-
-                            <h2 class="section-title">¿Tienes preguntas o propuestas?</h2>
-                            <p class="lead mb-4">
-                                ¿Quieres organizar un taller para tu equipo o necesitas licencias corporativas? Nuestro equipo responderá en menos de 24 horas.
-                            </p>
-
-                            <div class="contact-method-item">
-                                <div class="contact-method-icon">
-                                    <i class="bi bi-geo-alt"></i>
-                                </div>
-                                <div>
-                                    <div class="text-muted small">Ubicación</div>
-                                    <div class="fw-semibold text-dark">Londres & Madrid (Remoto Global)</div>
-                                </div>
-                            </div>
-
-                            <div class="contact-method-item">
-                                <div class="contact-method-icon">
-                                    <i class="bi bi-envelope"></i>
-                                </div>
-                                <div>
-                                    <div class="text-muted small">Correo Electrónico</div>
-                                    <a href="mailto:hola@ebookcloud.dev" class="fw-semibold text-dark">hola@ebookcloud.dev</a>
-                                </div>
-                            </div>
-
-                            <div class="contact-method-item">
-                                <div class="contact-method-icon">
-                                    <i class="bi bi-telephone"></i>
-                                </div>
-                                <div>
-                                    <div class="text-muted small">Teléfono / WhatsApp</div>
-                                    <a href="tel:+34912345678" class="fw-semibold text-dark">+34 912 345 678</a>
-                                </div>
-                            </div>
-
-                            <div class="mt-4 pt-2">
-                                <div class="fw-semibold text-dark mb-2">Síguenos en Redes:</div>
-                                <ul class="social-links">
-                                    <li><a href="#" class="social-link-btn" title="Twitter"><i class="bi bi-twitter-x"></i></a></li>
-                                    <li><a href="#" class="social-link-btn" title="GitHub"><i class="bi bi-github"></i></a></li>
-                                    <li><a href="#" class="social-link-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                                    <li><a href="#" class="social-link-btn" title="YouTube"><i class="bi bi-youtube"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+      <!-- About The Book Section -->
+      <section class="book-section section-padding" id="section_2">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 col-12 reveal">
+              <div class="book-preview-wrap">
+                <img
+                  src="images/tablet-preview.jpg"
+                  class="book-preview-img"
+                  alt="Previsualización del libro en tablet"
+                />
+              </div>
             </div>
-        </section>
 
+            <div class="col-lg-6 col-12 reveal reveal-delay-1">
+              <span class="section-tag">
+                <i class="bi bi-lightning-charge-fill"></i>
+                Enfoque Práctico
+              </span>
+
+              <h2 class="section-title">
+                Aprende lo que verdaderamente importa en producción
+              </h2>
+
+              <p class="lead">
+                Olvídate de manuales densos llenos de teoría obsoleta. Este
+                libro condensa años de experiencia resolviendo cuellos de
+                botella reales en infraestructuras de misión crítica.
+              </p>
+
+              <ul class="feature-check-list">
+                <li class="feature-check-item">
+                  <div class="feature-check-icon">
+                    <i class="bi bi-check-lg"></i>
+                  </div>
+                  <div>
+                    <strong
+                      >Patrones de Arquitectura Limpia & Serverless:</strong
+                    >
+                    Diseña sistemas desacoplados, tolerantes a fallos y
+                    económicos de operar.
+                  </div>
+                </li>
+
+                <li class="feature-check-item">
+                  <div class="feature-check-icon">
+                    <i class="bi bi-check-lg"></i>
+                  </div>
+                  <div>
+                    <strong>Automatización y Flujos de Trabajo:</strong> Elimina
+                    tareas manuales repetitivas con pipelines CI/CD y
+                    despliegues sin fricción.
+                  </div>
+                </li>
+
+                <li class="feature-check-item">
+                  <div class="feature-check-icon">
+                    <i class="bi bi-check-lg"></i>
+                  </div>
+                  <div>
+                    <strong>Productividad Sostenible:</strong> Hábitos clave
+                    para entregar proyectos a tiempo sin caer en el agotamiento
+                    profesional.
+                  </div>
+                </li>
+              </ul>
+
+              <div class="d-flex gap-3 mt-4">
+                <a
+                  href="#section_preview"
+                  class="btn-minimal btn-minimal-primary"
+                >
+                  <span>Ver Índice de Capítulos</span>
+                  <i class="bi bi-arrow-down-short"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chapters Explorer Section -->
+      <section class="chapters-section section-padding" id="section_preview">
+        <div class="container">
+          <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8 col-12 reveal">
+              <span class="section-tag">
+                <i class="bi bi-collection-fill"></i>
+                Contenido del Libro
+              </span>
+              <h2 class="section-title">Explora los capítulos clave</h2>
+              <p class="section-description">
+                Cada capítulo incluye explicaciones claras, diagramas de
+                arquitectura y ejemplos de código listos para implementar.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Chapter Selector Navigation -->
+            <div class="col-lg-4 col-12 reveal">
+              <div class="chapter-nav-card">
+                <button
+                  class="chapter-nav-btn active"
+                  data-chapter-target="chapter-1"
+                >
+                  <div>
+                    <span class="chapter-num">01</span>
+                    <span>Fundamentos y Visión</span>
+                  </div>
+                  <span class="chapter-duration">15 min</span>
+                </button>
+
+                <button class="chapter-nav-btn" data-chapter-target="chapter-2">
+                  <div>
+                    <span class="chapter-num">02</span>
+                    <span>Recupera tu Tiempo</span>
+                  </div>
+                  <span class="chapter-duration">22 min</span>
+                </button>
+
+                <button class="chapter-nav-btn" data-chapter-target="chapter-3">
+                  <div>
+                    <span class="chapter-num">03</span>
+                    <span>Trabaja Menos, Haz Más</span>
+                  </div>
+                  <span class="chapter-duration">18 min</span>
+                </button>
+
+                <button class="chapter-nav-btn" data-chapter-target="chapter-4">
+                  <div>
+                    <span class="chapter-num">04</span>
+                    <span>Delegar y Escalar</span>
+                  </div>
+                  <span class="chapter-duration">25 min</span>
+                </button>
+
+                <button class="chapter-nav-btn" data-chapter-target="chapter-5">
+                  <div>
+                    <span class="chapter-num">05</span>
+                    <span>Hábitos de Excelencia</span>
+                  </div>
+                  <span class="chapter-duration">16 min</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Chapter Display Card -->
+            <div class="col-lg-8 col-12 reveal reveal-delay-1">
+              <div class="chapter-display-card">
+                <!-- Pane 1 -->
+                <div class="chapter-pane active" id="chapter-1">
+                  <span
+                    class="badge bg-light text-primary border mb-3 px-3 py-2"
+                    >Capítulo 01</span
+                  >
+                  <h3>
+                    Introducción al Desarrollo Moderno & Arquitectura Ágil
+                  </h3>
+                  <p>
+                    Establecemos los cimientos de la ingeniería moderna: cómo
+                    estructurar proyectos para que sean comprensibles hoy y
+                    mantenibles dentro de 5 años. Comprenderás la diferencia
+                    fundamental entre complejidad accidental y esencial.
+                  </p>
+
+                  <div class="chapter-quote-box">
+                    "La simplicidad no es la ausencia de complejidad, sino la
+                    maestría para organizarla de forma intuitiva."
+                  </div>
+
+                  <h6 class="text-uppercase text-muted fw-bold mb-3">
+                    Puntos Clave del Capítulo:
+                  </h6>
+                  <div>
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i>
+                      Principios SOLID aplicados</span
+                    >
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i> Modelado
+                      de dominios limpios</span
+                    >
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i> Evitar el
+                      sobre-diseño</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Pane 2 -->
+                <div class="chapter-pane" id="chapter-2">
+                  <span
+                    class="badge bg-light text-primary border mb-3 px-3 py-2"
+                    >Capítulo 02</span
+                  >
+                  <h3>Recupera tu Tiempo: Automatización y Serverless</h3>
+                  <p>
+                    Aprende a delegar en la infraestructura gestionada todo el
+                    peso operativo que antes consumía horas de guardia:
+                    despliegues continuos, funciones efímeras y observabilidad
+                    automatizada.
+                  </p>
+
+                  <div class="chapter-quote-box">
+                    "Cada proceso manual en tu flujo de trabajo es una
+                    invitación abierta al error humano y a la pérdida de foco."
+                  </div>
+
+                  <h6 class="text-uppercase text-muted fw-bold mb-3">
+                    Puntos Clave del Capítulo:
+                  </h6>
+                  <div>
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i> Pipelines
+                      CI/CD sin fricción</span
+                    >
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i>
+                      Arquitectura impulsada por eventos</span
+                    >
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i> Reducción
+                      de costes en la nube</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Pane 3 -->
+                <div class="chapter-pane" id="chapter-3">
+                  <span
+                    class="badge bg-light text-primary border mb-3 px-3 py-2"
+                    >Capítulo 03</span
+                  >
+                  <h3>Trabaja Menos, Haz Más: El Enfoque del 80/20</h3>
+                  <p>
+                    Descubre cómo identificar el 20% de las decisiones de diseño
+                    que generan el 80% del valor para los usuarios y la
+                    estabilidad de la plataforma, evitando reescrituras
+                    innecesarias.
+                  </p>
+
+                  <div class="chapter-quote-box">
+                    "La productividad de un ingeniero no se mide en líneas de
+                    código redactadas, sino en problemas definitivamente
+                    resueltos."
+                  </div>
+
+                  <h6 class="text-uppercase text-muted fw-bold mb-3">
+                    Puntos Clave del Capítulo:
+                  </h6>
+                  <div>
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i>
+                      Priorización con impacto real</span
+                    >
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i>
+                      Refactorización segura y continua</span
+                    >
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i> Pruebas
+                      que dan confianza</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Pane 4 -->
+                <div class="chapter-pane" id="chapter-4">
+                  <span
+                    class="badge bg-light text-primary border mb-3 px-3 py-2"
+                    >Capítulo 04</span
+                  >
+                  <h3>
+                    Delegar y Escalar: Microservicios y Sistemas Distribuidos
+                  </h3>
+                  <p>
+                    Manejo de estados, consistencia eventual y contratos de API
+                    resilientes. Un desglose realista de cuándo adoptar
+                    microservicios y cuándo un monolito modular sigue siendo tu
+                    mejor aliado.
+                  </p>
+
+                  <div class="chapter-quote-box">
+                    "No distribuyas un sistema hasta que no entiendas a fondo
+                    cómo gestionar los fallos de red y las particiones de
+                    datos."
+                  </div>
+
+                  <h6 class="text-uppercase text-muted fw-bold mb-3">
+                    Puntos Clave del Capítulo:
+                  </h6>
+                  <div>
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i> Monolito
+                      modular vs Microservicios</span
+                    >
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i>
+                      Resiliencia con circuit breakers</span
+                    >
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i>
+                      Trazabilidad distribuida</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Pane 5 -->
+                <div class="chapter-pane" id="chapter-5">
+                  <span
+                    class="badge bg-light text-primary border mb-3 px-3 py-2"
+                    >Capítulo 05</span
+                  >
+                  <h3>Hábitos de Alto Rendimiento para Profesionales</h3>
+                  <p>
+                    Cierra con una metodología de trabajo diaria: gestión de
+                    bloques de concentración, revisión de código constructiva y
+                    aprendizaje continuo en un ecosistema tecnológico que nunca
+                    se detiene.
+                  </p>
+
+                  <div class="chapter-quote-box">
+                    "La consistencia diaria en pequeños hábitos de calidad
+                    supera con creces cualquier esfuerzo maratoniano
+                    esporádico."
+                  </div>
+
+                  <h6 class="text-uppercase text-muted fw-bold mb-3">
+                    Puntos Clave del Capítulo:
+                  </h6>
+                  <div>
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i> Bloques
+                      de deep work</span
+                    >
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i>
+                      Documentación viva y útil</span
+                    >
+                    <span class="takeaway-tag"
+                      ><i class="bi bi-check-circle text-primary"></i> Gestión
+                      de la fatiga técnica</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Author Section -->
+      <section class="author-section section-padding" id="section_3">
+        <div class="container">
+          <div class="author-card">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-5 col-12 reveal">
+                <div class="author-image-wrap">
+                  <img
+                    src="images/author-sophia.jpg"
+                    class="author-image"
+                    alt="Retrato de la Profesora Sophia"
+                  />
+                  <div class="author-experience-pill">
+                    <i class="bi bi-shield-check text-success me-1"></i>
+                    15+ Años Liderando Equipos
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-7 col-12 reveal reveal-delay-1">
+                <span class="section-tag">
+                  <i class="bi bi-person-badge-fill"></i>
+                  Sobre la Autora
+                </span>
+
+                <h2 class="section-title">Prof. Sophia Vance</h2>
+                <p class="text-primary fw-semibold mb-3">
+                  Arquitecta de Software, Investigadora & Mentora Tecnológica
+                </p>
+
+                <p>
+                  Con más de una década y media liderando transformaciones
+                  tecnológicas en startups de rápido crecimiento y
+                  multinacionales, Sophia ha dedicado su carrera a democratizar
+                  el conocimiento de ingeniería de alto nivel.
+                </p>
+
+                <p>
+                  Ha asesorado a cientos de desarrolladores en más de 20 países
+                  y sus publicaciones sobre patrones de diseño y escalabilidad
+                  son referencia habitual en comunidades técnicas globales.
+                </p>
+
+                <div class="row g-3 my-4">
+                  <div class="col-sm-4 col-12">
+                    <div class="author-stat-box">
+                      <div class="author-stat-val">15+</div>
+                      <div class="author-stat-name">Años de Trayectoria</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-12">
+                    <div class="author-stat-box">
+                      <div class="author-stat-val">3</div>
+                      <div class="author-stat-name">Libros Publicados</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-12">
+                    <div class="author-stat-box">
+                      <div class="author-stat-val">50K+</div>
+                      <div class="author-stat-name">Alumnos en Línea</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <a href="#section_5" class="btn-minimal btn-minimal-primary">
+                    <span>Contactar con la Autora</span>
+                    <i class="bi bi-envelope"></i>
+                  </a>
+
+                  <a
+                    href="https://github.com"
+                    target="_blank"
+                    class="social-link-btn"
+                    title="GitHub"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    class="social-link-btn"
+                    title="Twitter"
+                  >
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    class="social-link-btn"
+                    title="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews & Testimonials Section -->
+      <section class="reviews-section section-padding" id="section_4">
+        <div class="container">
+          <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8 col-12 reveal">
+              <span class="section-tag">
+                <i class="bi bi-chat-heart-fill"></i>
+                Opiniones Verificadas
+              </span>
+              <h2 class="section-title">
+                Lo que dicen quienes ya lo han leído
+              </h2>
+              <p class="section-description">
+                Opiniones sinceras de desarrolladores, diseñadores y directores
+                de ingeniería de todo el mundo.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Review 1 -->
+            <div class="col-lg-4 col-md-6 col-12 reveal">
+              <div class="review-card">
+                <div>
+                  <div class="review-card-header">
+                    <img
+                      src="images/avatar/avatar-sandy.jpg"
+                      class="review-avatar"
+                      alt="Sandy Martinez"
+                    />
+                    <div>
+                      <div class="review-author-name">Sandy Martínez</div>
+                      <div class="review-author-role">
+                        Senior Frontend Engineer & Designer
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="review-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+
+                  <p class="review-body">
+                    "Rara vez un libro técnico logra un equilibrio tan perfecto
+                    entre rigor conceptual y aplicabilidad inmediata. Las
+                    explicaciones sobre arquitectura limpia transformaron la
+                    forma en que estructuro componentes y APIs."
+                  </p>
+                </div>
+
+                <div
+                  class="pt-3 border-top d-flex justify-content-between align-items-center text-muted small"
+                >
+                  <span
+                    ><i class="bi bi-patch-check-fill text-primary me-1"></i>
+                    Compra verificada</span
+                  >
+                  <span>Hace 2 semanas</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="col-lg-4 col-md-6 col-12 reveal reveal-delay-1">
+              <div class="review-card">
+                <div>
+                  <div class="review-card-header">
+                    <img
+                      src="images/avatar/avatar-john.jpg"
+                      class="review-avatar"
+                      alt="John Evans"
+                    />
+                    <div>
+                      <div class="review-author-name">John Evans</div>
+                      <div class="review-author-role">
+                        Tech Lead & Cloud Architect
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="review-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+
+                  <p class="review-body">
+                    "El capítulo sobre automatización y reducción de tareas
+                    manuales nos ahorró decenas de horas de trabajo este
+                    trimestre. Directo al punto, sin relleno y con ejemplos
+                    reales que funcionan en el mundo corporativo."
+                  </p>
+                </div>
+
+                <div
+                  class="pt-3 border-top d-flex justify-content-between align-items-center text-muted small"
+                >
+                  <span
+                    ><i class="bi bi-patch-check-fill text-primary me-1"></i>
+                    Compra verificada</span
+                  >
+                  <span>Hace 1 mes</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="col-lg-4 col-md-6 col-12 reveal reveal-delay-2">
+              <div class="review-card">
+                <div>
+                  <div class="review-card-header">
+                    <img
+                      src="images/avatar/avatar-candy.jpg"
+                      class="review-avatar"
+                      alt="Candy Reynolds"
+                    />
+                    <div>
+                      <div class="review-author-name">Candy Reynolds</div>
+                      <div class="review-author-role">
+                        VP of Product & Engineering
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="review-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+
+                  <p class="review-body">
+                    "Se lo he recomendado a todo mi equipo de desarrollo. La
+                    claridad con la que aborda la gestión de la deuda técnica y
+                    los hábitos de entrega continua es simplemente brillante.
+                    Una lectura obligada."
+                  </p>
+                </div>
+
+                <div
+                  class="pt-3 border-top d-flex justify-content-between align-items-center text-muted small"
+                >
+                  <span
+                    ><i class="bi bi-patch-check-fill text-primary me-1"></i>
+                    Compra verificada</span
+                  >
+                  <span>Hace 3 semanas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download & Contact Section -->
+      <section class="contact-section section-padding" id="section_5">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <!-- Download Form -->
+            <div class="col-lg-6 col-12 reveal">
+              <div class="download-form-card">
+                <span class="section-tag mb-3">
+                  <i class="bi bi-cloud-arrow-down-fill"></i>
+                  Descarga Inmediata
+                </span>
+
+                <h3 class="mb-2">Obtén tu copia gratuita</h3>
+                <p class="text-muted mb-4">
+                  Elige tu formato preferido y recibe los primeros capítulos y
+                  ejemplos de código directamente en tu correo.
+                </p>
+
+                <!-- Format Selector -->
+                <div class="format-pills">
+                  <div class="format-pill active" data-format="pdf">
+                    <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                  </div>
+                  <div class="format-pill" data-format="epub">
+                    <i class="bi bi-tablet me-1"></i> ePub
+                  </div>
+                  <div class="format-pill" data-format="mobi">
+                    <i class="bi bi-book me-1"></i> Kindle
+                  </div>
+                </div>
+
+                <form
+                  class="custom-form ebook-download-form"
+                  action="#"
+                  method="post"
+                >
+                  <div class="custom-input-group">
+                    <input
+                      type="text"
+                      name="ebook-form-name"
+                      id="ebook-form-name"
+                      class="custom-input"
+                      placeholder="Tu Nombre Completo"
+                      required
+                    />
+                    <i class="bi bi-person input-icon"></i>
+                  </div>
+
+                  <div class="custom-input-group">
+                    <input
+                      type="email"
+                      name="ebook-email"
+                      id="ebook-email"
+                      class="custom-input"
+                      placeholder="tu-correo@empresa.com"
+                      required
+                    />
+                    <i class="bi bi-envelope input-icon"></i>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn-minimal btn-minimal-primary w-100 py-3 mt-2"
+                  >
+                    <span>Descargar Ebook Ahora</span>
+                    <i class="bi bi-download"></i>
+                  </button>
+
+                  <div class="text-center mt-3">
+                    <small class="text-muted">
+                      <i class="bi bi-lock-fill me-1 text-success"></i>
+                      100% Gratuito y libre de spam. Puedes darte de baja en
+                      cualquier momento.
+                    </small>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="col-lg-6 col-12 reveal reveal-delay-1">
+              <div class="contact-info-card">
+                <span class="section-tag mb-3">
+                  <i class="bi bi-chat-dots-fill"></i>
+                  Soporte & Consultas
+                </span>
+
+                <h2 class="section-title">¿Tienes preguntas o propuestas?</h2>
+                <p class="lead mb-4">
+                  ¿Quieres organizar un taller para tu equipo o necesitas
+                  licencias corporativas? Nuestro equipo responderá en menos de
+                  24 horas.
+                </p>
+
+                <div class="contact-method-item">
+                  <div class="contact-method-icon">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div>
+                    <div class="text-muted small">Ubicación</div>
+                    <div class="fw-semibold text-dark">
+                      Londres & Madrid (Remoto Global)
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-method-item">
+                  <div class="contact-method-icon">
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                  <div>
+                    <div class="text-muted small">Correo Electrónico</div>
+                    <a
+                      href="mailto:hola@ebookcloud.dev"
+                      class="fw-semibold text-dark"
+                      >hola@ebookcloud.dev</a
+                    >
+                  </div>
+                </div>
+
+                <div class="contact-method-item">
+                  <div class="contact-method-icon">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div>
+                    <div class="text-muted small">Teléfono / WhatsApp</div>
+                    <a href="tel:+34912345678" class="fw-semibold text-dark"
+                      >+34 912 345 678</a
+                    >
+                  </div>
+                </div>
+
+                <div class="mt-4 pt-2">
+                  <div class="fw-semibold text-dark mb-2">
+                    Síguenos en Redes:
+                  </div>
+                  <ul class="social-links">
+                    <li>
+                      <a href="#" class="social-link-btn" title="Twitter"
+                        ><i class="bi bi-twitter-x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="social-link-btn" title="GitHub"
+                        ><i class="bi bi-github"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="social-link-btn" title="LinkedIn"
+                        ><i class="bi bi-linkedin"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="social-link-btn" title="YouTube"
+                        ><i class="bi bi-youtube"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 col-12 text-center text-md-start mb-3 mb-md-0">
-                    <p class="footer-text">
-                        © 2026 Ebook Company. Todos los derechos reservados.
-                    </p>
-                </div>
-                <div class="col-md-6 col-12 text-center text-md-end">
-                    <p class="footer-text">
-                        Diseñado con estética minimalista y rendimiento óptimo.
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-12 text-center text-md-start mb-3 mb-md-0">
+            <p class="footer-text">
+              © 2026 Ebook Company. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="col-md-6 col-12 text-center text-md-end">
+            <p class="footer-text">
+              Diseñado con estética minimalista y rendimiento óptimo.
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
-        <i class="bi bi-arrow-up"></i>
+      <i class="bi bi-arrow-up"></i>
     </button>
 
     <!-- Toast Notification for Download Feedback -->
     <div class="toast-feedback" id="toastFeedback">
-        <i class="bi bi-check-circle-fill text-success fs-5"></i>
-        <span class="toast-msg">¡Descarga procesada con éxito!</span>
+      <i class="bi bi-check-circle-fill text-success fs-5"></i>
+      <span class="toast-msg">¡Descarga procesada con éxito!</span>
     </div>
 
     <!-- Scripts -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
-
-</body>
-
+  </body>
 </html>
