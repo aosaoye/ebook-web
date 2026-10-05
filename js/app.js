@@ -7,42 +7,6 @@ const API_URL = "https://n8q456xvr5.execute-api.us-east-1.amazonaws.com/dev/cont
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  const _form = document.querySelector('.ebook-download-form');
-
-  if(!_form) return;
-
-  _form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const name = document.getElementById("ebook-form-name").value;
-    const email = document.getElementById("ebook-form-email").value;
-    const payload = {name, email}
-    console.log("Sending payload", payload)
-
-    try {
-      const response = fetch(API_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(payload)
-      })
-
-      const result = await response;
-
-      if(!(await response).ok) {
-        throw new Error(`HTTP error! status: ${result.status}`);
-      }
-
-
-      alert(result.message)
-
-      _form.reset();
-
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
-  } )
-
 
   // 1. Navbar Scroll Effect
   const navbar = document.querySelector('.navbar');
@@ -170,19 +134,37 @@ document.addEventListener('DOMContentLoaded', () => {
   const toast = document.getElementById('toastFeedback');
 
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const submitBtn = form.querySelector('button[type="submit"]');
-      const nameInput = form.querySelector('input[name="ebook-form-name"]');
+      const name = document.getElementById("ebook-form-name");
+      const email = document.getElementById("ebook-email");
+      const format = form.querySelector('.format-pill.active')?.getAttribute('data-format') || 'PDF';
       const originalText = submitBtn.innerHTML;
 
-      // Loading state
+      try {
+      const response = fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      })
+
+      const result = await response;
+
+      if(!result.ok) {
+        throw new Error(`HTTP error! status: ${result.status}`);
+      }
+
+            // Loading state
       submitBtn.disabled = true;
       submitBtn.innerHTML = `
         <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
         Procesando descarga...
       `;
 
+      
       setTimeout(() => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = `
@@ -193,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show toast
         if (toast) {
           const userName = nameInput && nameInput.value.trim() ? nameInput.value.trim() : 'Lector';
-          toast.querySelector('.toast-msg').textContent = `¡Gracias ${userName}! Revisa tu correo con el enlace de descarga.`;
+          toast.querySelector('.toast-msg').textContent = `¡Gracias ${userName}! ${result.message}`;
           toast.classList.add('show');
 
           setTimeout(() => {
@@ -203,6 +185,13 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 4500);
         }
       }, 1000);
+
+      form.reset();
+
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+
     });
   }
 
