@@ -139,7 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const submitBtn = form.querySelector('button[type="submit"]');
       const name = document.getElementById("ebook-form-name");
       const email = document.getElementById("ebook-email");
-      const format = form.querySelector('.format-pill.active')?.getAttribute('data-format') || 'PDF';
       const originalText = submitBtn.innerHTML;
       const payload = {
         name: name ? name.value.trim() : 'N/A',
@@ -155,30 +154,32 @@ document.addEventListener('DOMContentLoaded', () => {
         body: JSON.stringify(payload)
       })
 
-      const result = await response;
+      const data = (await response).json();
 
-      if(!result.ok) {
-        throw new Error(`HTTP error! status: ${result.status}`);
+      const result = await data;
+      if(!result.success) {
+        throw new Error(`HTTP error! status`);
       }
-
+    
             // Loading state
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = `
-        <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-        Procesando descarga...
-      `;
+       submitBtn.disabled = true;
+       submitBtn.innerHTML = `
+         <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+         Procesando descarga...
+       `;
+       console.log("Form submitted successfully:", result);
 
       
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = `
-          <i class="bi bi-check-circle-fill me-2 text-white"></i>
-          ¡Descarga lista!
-        `;
+       setTimeout(() => {
+         submitBtn.disabled = false;
+         submitBtn.innerHTML = `
+           <i class="bi bi-check-circle-fill me-2 text-white"></i>
+           ¡Descarga lista!
+         `;
 
-        // Show toast
+          // Show toast
         if (toast) {
-          const userName = nameInput && nameInput.value.trim() ? nameInput.value.trim() : 'Lector';
+          const userName = result.name ? result.name : 'Usuario';
           toast.querySelector('.toast-msg').textContent = `¡Gracias ${userName}! ${result.message}`;
           toast.classList.add('show');
 
