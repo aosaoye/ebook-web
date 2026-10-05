@@ -141,6 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = document.getElementById("ebook-email");
       const format = form.querySelector('.format-pill.active')?.getAttribute('data-format') || 'PDF';
       const originalText = submitBtn.innerHTML;
+      const payload = {
+        name: name ? name.value.trim() : 'N/A',
+        email: email ? email.value.trim() : 'N/A',
+      };
 
       try {
       const response = fetch(API_URL, {
